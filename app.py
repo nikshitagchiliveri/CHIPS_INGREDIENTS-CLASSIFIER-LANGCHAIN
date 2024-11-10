@@ -4,7 +4,6 @@ import joblib
 import easyocr
 import numpy as np
 from PIL import Image
-import os
 
 # Custom CSS for improved UI styling
 st.markdown("""
@@ -48,15 +47,8 @@ with st.container():
     st.markdown("<div class='subtitle'>Classify ingredients as 'Healthy', 'Moderate', or 'Unhealthy'</div>", unsafe_allow_html=True)
 
     # Load dataset and model
-    try:
-        df = pd.read_csv('ingredients - Sheet1 (4) (1).csv')
-    except FileNotFoundError:
-        st.error("The ingredients dataset file was not found. Please make sure the file is in the same directory as app.py.")
-    
-    try:
-        model = joblib.load('ingredient_classifier_model.pkl')
-    except FileNotFoundError:
-        st.error("The classifier model file was not found. Please make sure the file is in the same directory as app.py.")
+    df = pd.read_csv('ingredients - Sheet1 (4) (1).csv')
+    model = joblib.load('ingredient_classifier_model.pkl')
 
     # Define mapping for classification
     status_map = {2: "Healthy", 1: "Moderate", 0: "Unhealthy"}
