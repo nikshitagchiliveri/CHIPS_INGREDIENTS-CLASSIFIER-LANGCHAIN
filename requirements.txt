@@ -1,4 +1,5 @@
 streamlit
 pandas
 joblib
-scikit-learn
+easyocr
+Pillow
