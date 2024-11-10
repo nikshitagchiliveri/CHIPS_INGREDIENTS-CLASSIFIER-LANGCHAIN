@@ -1,6 +1,9 @@
-numpy>=1.26
+streamlit==1.26.0
 pandas==1.5.3
-streamlit==1.24.0
+joblib==1.2.0
 easyocr==1.6.2
-torch>=2.0
-# Add other dependencies as needed
+numpy==1.23.5
+Pillow==9.5.0
+torch==1.13.1
+torchvision==0.14.1
+opencv-python-headless==4.6.0.66
