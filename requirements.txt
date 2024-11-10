@@ -1,5 +1,6 @@
-streamlit==1.24.0
+numpy>=1.26
 pandas==1.5.3
-joblib==1.2.0
+streamlit==1.24.0
 easyocr==1.6.2
-pillow==9.5.0
+torch>=2.0
+# Add other dependencies as needed
