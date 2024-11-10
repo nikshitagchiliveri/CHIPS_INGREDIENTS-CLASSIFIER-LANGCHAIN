@@ -1,4 +1,4 @@
-# Requirements for the app
+# Streamlit and necessary libraries
 streamlit==1.26.0
 pandas==1.5.3
 joblib==1.2.0
@@ -6,9 +6,5 @@ easyocr==1.6.2
 numpy==1.23.5
 Pillow==9.5.0
 torch==1.13.1
-torchvision==0.14.1
-opencv-python-headless==4.6.0.66
-
-# Additional dependencies to support distutils in Python 3.12
-setuptools==66.0.0  # Use a version compatible with distutils workaround
-setuptools-scm==7.0.5  # To resolve dependencies for some older packages
+torchvision==0.15.1  # Updated version compatible with Python 3.11
+opencv-python-headless==4.5.4.60  # Compatible with easyocr==1.6.2
