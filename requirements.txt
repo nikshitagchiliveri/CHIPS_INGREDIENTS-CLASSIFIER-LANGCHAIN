@@ -2,5 +2,4 @@ streamlit==1.24.0
 pandas==1.5.3
 joblib==1.2.0
 easyocr==1.6.2
-numpy==1.21.6
-Pillow==9.5.0
+pillow==9.5.0
